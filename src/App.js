@@ -37,11 +37,11 @@ class App extends Component {
     const { users } = this.state;
 
     return (
-      <div className='container'>
+      <div>
         <h1 className={'text-center bg-primary bg-gradient'}>User Cards</h1>
         <div className="card-container">
           {users.map((user) => (
-            <div key={user.id}  className={"card text-white bg-dark mb-3 d-inline-block text-center "} style={{"max-width": "200rem"}}>
+            <div key={user.id}  className={"card text-white bg-dark mb-3 d-inline-block text-center "} style={{"max-width": "200rem", "padding":"30px", "margin":"10px"}}>
             <h4 class="card-title">{user.firstName} {user.lastName}</h4>
             <h6 class="card-subtitle mb-2 text-white">{user.age} {user.gender}</h6>
             <img  width={"100px"} src={user.image} alt="Card image"></img>
